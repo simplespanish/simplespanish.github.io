@@ -15,8 +15,11 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/font-awesome.min.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    {% for cssFile in page.cssFiles %}
+      <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/{{ cssFile }}" />
+    {% endfor %}
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
@@ -28,7 +31,12 @@
     
     {% include footer.html %}
 
-    {% include analytics.html %}
     {% include bootstrap.html %}
+    {% include analytics.html %}
+    {% for jsInclude in page.jsIncludes %}
+      
+      {% include {{ jsInclude }} %}
+      
+    {% endfor %}
   </body>
 </html>
