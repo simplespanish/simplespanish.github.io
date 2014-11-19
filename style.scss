@@ -6,277 +6,339 @@
 //
 
 @import "_reset";
+@import "_ie";
+@import "_print";
 @import "_variables";
+@import "_bootstrap";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
 /* BASE RULES */
 /**************/
 
-html {
-  font-size: 100%;
+//@extend-elements
+//original selectors
+//#myCarousel .slick-prev, #myCarousel .slick-next
+%extend_1 {
+  width: 35px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
 }
 
-body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+
+//original selectors
+//#myCarousel .slick-prev:before, #myCarousel .slick-next:before
+%extend_2 {
+  position: absolute;
+  top: 50%;
+  font-family: $font_0;
+  content: "\e079";
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
+//original selectors
+//h3 a.phone-link, h3 a.email-link
+%extend_3 {
+  color: #FEE354;
+  float: none;
+  text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
-  
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
 
-  @include mobile {
-    line-height: 1.4;
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  a.phone-link {
+    color: #FEE354 !important;
   }
-}
-  
-h1 {  
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
-}
-
-h2 {  
-  font-size: 24px;
-}
-
-h3 {  
-  font-size: 20px;
-}
-
-h4 {  
-  font-size: 18px;
-  color: $gray;
-}
-
-p {
-  margin: 15px 0;
-}
-
-a {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
-}
-
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
-}
-
-ul ul, ol ul {
-  list-style-type: circle;
-}
-
-em, i {
-  font-style: italic;
-}
-
-strong, b {
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
-}
-
-.date {
-  font-style: italic;
-  color: $gray;
-}
-
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
-}
-
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-//
-// .masthead
-//
-
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
-.masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-  
-  @include mobile {
-    text-align: center;
-  }
-}
-
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
-
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $helveticaNeue; 
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
-
-.site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-  
-  @include mobile {
-    margin: 3px 0;
-  }
-}
-
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue; 
-  font-size: 18px;
-  
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
+  .navbar-brand {
+    font-weight: lighter;
+    b {
+      font-weight: 500;
     }
   }
 }
-
-//
-// .main
-//
-
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
-.post { 
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
+@media (max-width: 767px) {
+  .navbar-default .navbar-collapse{
+    background-color: #222;
   }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
+  .container#about h2 {
+    text-align: center;
   }
 }
+.modal {
+  p {
+    color: $color_log_cabin_approx;
+  }
+  h1 {
+    color: $color_log_cabin_approx;
+  }
+  h2 {
+    color: $color_log_cabin_approx;
+  }
+  h3 {
+    color: $color_log_cabin_approx;
+  }
+  h4 {
+    color: $color_log_cabin_approx;
+  }
+  a {
+    color: #B5A44A;
+  }
+}
+.ss-logo {
+  background-image: url("../images/simplespanish.svg");
+  height: 50%;
+  widows: 200px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#myCarousel {
+  // height: 500px;
+  margin-bottom: 0;
+  -webkit-transition: background-image .25s ease-in-out;
+  transition: background-image .25s ease-in-out;
 
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  .slick-dots {
+    bottom: 0;
+    li {
+      button:before {
+        font-size: 14px;
+        color: $white_60;
+      }
+      .slick-active button:before {
+        color: $white;
+      }
+    }
+  }
+  .slick-prev {
+    @extend %extend_1;
+    left: 0;
+    padding-left: 20px;
+    &:before {
+      @extend %extend_2;
+      right: 0;
+    }
+  }
+  .slick-next {
+    @extend %extend_1;
+    right: 0;
+    padding-right: 20px;
+    &:before {
+      @extend %extend_2;
+      left: 0;
+      font-family: $font_0;
+      content: "\e080";
+    }
+  }
+  .slick-list, 
+  .slick-track {
+    height: 100%;
+  }
+  .carousel-control {
+    background-image: none;
+  }
+  .item {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: $color_mine_shaft_approx;
+    background: linear-gradient(to bottom, $black_50 0, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000',GradientType=0 );
+    &.intro {
+      .carousel-caption {
+        top: 12%;
+      }
+      .about-btn {
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+        right: 10px;
+        height: 10px;
+        max-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+          color: #fee354;
+        }
+      }
+      .button-label {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 80px;
+      }
+      .btn {
+        position: absolute;
+        bottom: 40px;
+        left: 10px;
+        right: 10px;
+        max-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        -webkit-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out;
+        &:hover {
+          background-color: #fff;
+          color: #222;
+        }
+      }
+      h3 strong {
+        color: #FEE354;
+        line-height: 1.3em;
+      }
+    }
+    #study {
+      background-image: linear-gradient(to top, $black_50 0, rgba(0, 0, 0, 0.7) 100%), url('../images/study.jpg') ;
+    }
+    .carousel-bg-img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  
+}
+.container {
+  margin: 0;
+  width: 100%;
+  &#about-us {
+    padding: 0;
+    .about-us-exp {
+      margin: auto;
+      text-align: center;
+      font-size: 1.2em;
+      i {
+        font-size: 3em;
+      }
+      // p {
+      //  min-width: 300px;
+      // }
+    }
+    .row {
+      margin: 0;
+      width: 100%;
+      padding: 0 !important;
+    }
+    .col {
+      // height: 300px;
+      padding: 30px 5%;
+      display: inline-flex;
+
+    }
+    .personalize {
+      background-color: #303030;
+      color: #fff;
+    }
+    .comfortable {
+      background-color: #F7F7F7;
+      color: #222;
+    }
+    .passion {
+      background-color: #fff;
+      color: #222;
+    }
+    .practical {
+      background-color: #202020;
+      color: #fff;
+    }
+  }
+  &#about {
+    border-top: 1px solid rgba(34, 34, 34, 0.16);
+    background: $white;
+    color: $color_log_cabin_approx;
+    font-size: 1.2em;
+    h2 {
+      margin-top: 0;
+    }
+
+    background-position: center 40%;
+    background-size: cover;
+    // background-image: linear-gradient(to left, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0.98) 100%), url("../images/marta2.png");
+    
+    @media (min-width: 768px) {
+      background-attachment: fixed;
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.7) 100%), url("../images/marta2.png");
+    }
+  }
+  &#contact {
+    background: $color_tundora_approx;
+    h3 {
+      margin-top: 0 !important;
+    }
+  }
+  .row {
+    padding-top: 15px;
+    &:not(.header) {
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+  }
+  &#pricing {
+    .row {
+      &:not(.header) {
+        padding-top: 15px;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .container .row {
+    width: 970px;
+  }
+}
+@media (min-width: 992px) and (min-width: 768px) {
+  .container#contact h3 a {
+    &.phone-link {
+      text-align: right;
+    }
+    &.email-link {
+      text-align: right;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .container .row {
+    width: 750px;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container .row {
+    width: 1170px;
+  }
+}
+a.fa {
+  text-decoration: none;
+  &:hover {
+    color: #FEE354;
+  }
+}
+form.contact-form textarea {
+  height: 80px;
+}
+h3 a {
+  &.phone-link {
+    @extend %extend_3;
+  }
+  &.email-link {
+    @extend %extend_3;
+  }
+}
+.table-hover > tbody > tr:hover {
+  background-color: transparent;
 }
 
-footer {
-  padding: 20px 0;
-  text-align: center;
-}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

@@ -1,0 +1,58 @@
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script type="text/javascript" src="./js/slick.min.js"></script>
+<script src="./js/wufoo.js"></script>
+<script type="text/javascript">
+
+
+$(function() {
+  $("#myCarousel").slick({
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 5000
+  });
+
+  var height = $(window).height();
+    height = (height < 460) ? 460 : height;
+  $("#myCarousel").height(height);
+
+  if (height > 600) {
+      $(".col").height((height/2) - 60);
+      $("#about").css('min-height', height/2);
+  }
+
+  // Bind event listener to window resize
+  $(window).resize(function(){
+    var height = $(window).height();
+    height = (height < 460) ? 460 : height;
+    $("#myCarousel").height(height);
+    if (height > 600) {
+      $(".col").height((height/2) - 60);
+      $("#about").css('min-height', height/2);
+    }
+  });
+
+  $('a.slide-link[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 600);
+        return false;
+      }
+    }
+  });
+
+  if (document.URL.indexOf("#cancelation") != -1) {
+    $("#cancelationModal").modal();
+  }
+  else if (document.URL.indexOf("#contactcomplete") != -1) {
+    $("#contactModal").modal();
+  } 
+});
+</script>

@@ -21,7 +21,20 @@ $georgia: Georgia, serif;
 
 // Mobile breakpoints
 @mixin mobile {
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 767px) {
     @content;
   }
 }
+
+//colors
+$color_log_cabin_approx: #222;
+$color_mustard_approx: #fee354;
+$color_husk_approx: #b5a44a;
+$white_60: rgba(255, 255, 255, 0.6);
+$white: white;
+$color_mine_shaft_approx: #333;
+$black_50: rgba(0, 0, 0, 0.9);
+$color_tundora_approx: #444;
+
+//fonts
+$font_0: Glyphicons Halflings;
