@@ -6,10 +6,12 @@ cssFiles:
 - blog.css
 ---
 
+{{ total_pages }}
+{{ total_posts }}
 
 <div class="posts container">
 	<div class="row">
-		{% for post in paginator.posts %}
+		{% for post in site.posts %}
 		<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
 			<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 			<div class="entry">
@@ -29,7 +31,7 @@ cssFiles:
 	<nav class="">
 	  <ul class="pagination center-block">
 		  <li><a href="#"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-	  	{% for i in (1..paginator.total_pages) %}
+	  	{% for i in (1..page.total_posts) %}
 		    
 		    <li><a href="#">{{ i }}</a></li>
 	    {% endfor %}
