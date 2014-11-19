@@ -1,3 +1,38 @@
-article.post {
+.post {
+
+	// padding-top: 50px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	img:not(.emoji) {
+		max-width: 100%;
+	}
+
+
 	
+	.entryImg {
+		// height: 100px;
+		width: 100%;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	
+}
+
+nav {
+
+	ul.pagination,
+	ul.pager {
+		padding: 0 20px;
+		li {
+			a {
+				color: $darkerGray;
+			}
+			&.active {
+				a {
+					background-color: $darkerGray;
+				}
+			}
+		}
+	}
 }

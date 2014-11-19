@@ -59,6 +59,15 @@
     b {
       font-weight: 500;
     }
+
+    @media (max-width: 767px) {
+      padding-left: 0;
+    }
+  }
+  .navbar-toggle {
+    @media (max-width: 767px) {
+      margin-right: 0;
+    } 
   }
 }
 @media (max-width: 767px) {
@@ -67,6 +76,11 @@
   }
   .container#about h2 {
     text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.7em;
   }
 }
 .modal {

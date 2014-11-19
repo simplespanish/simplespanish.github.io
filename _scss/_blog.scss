@@ -16,3 +16,19 @@
 		}
 	}
 }
+
+nav {
+	ul.pagination,
+	ul.pager {
+		li {
+			a {
+				color: $darkerGray;
+			}
+			&.active {
+				a {
+					background-color: $darkerGray;
+				}
+			}
+		}
+	}
+}
