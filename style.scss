@@ -12,6 +12,9 @@
 @import "_bootstrap";
 // Syntax highlighting @import is at the bottom of this file
 
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic);
+
 /**************/
 /* BASE RULES */
 /**************/
@@ -164,6 +167,9 @@
     background: linear-gradient(to bottom, $black_50 0, rgba(0, 0, 0, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000',GradientType=0 );
     &.intro {
+      i {
+        font-style: italic;
+      }
       .carousel-caption {
         top: 12%;
       }
@@ -196,6 +202,7 @@
         margin-right: auto;
         -webkit-transition: all .25s ease-in-out;
         transition: all .25s ease-in-out;
+        border-color: #fff !important;
         &:hover {
           background-color: #fff;
           color: #222;
@@ -204,6 +211,7 @@
       h3 strong {
         color: #FEE354;
         line-height: 1.3em;
+        font-weight: 900;
       }
     }
     #study {
@@ -324,6 +332,12 @@
 @media (min-width: 768px) {
   .container .row {
     width: 750px;
+    margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .container .row {
+    width: 975px;
     margin: auto;
   }
 }
