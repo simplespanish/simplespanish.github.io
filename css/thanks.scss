@@ -1,0 +1,51 @@
+.bg-image {
+    // background-image: url("../images/thanks.png");
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%), url('../images/thanks.png') ;
+    background-size: cover;
+    background-position: center;
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    &.darker {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%), url('../images/thanks.png') ;
+    }
+    
+}
+
+#thanks-container {
+    position: relative;
+    margin: auto;
+    margin-top: 30%;
+    min-width: 300px;
+    width: 30%;
+    z-index: 1;
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 3px;
+
+    @media (min-width: 768px) {
+        margin-top: 20%;
+    }
+
+    .btn {
+        -webkit-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out;
+        &:hover {
+            background-color: #fff;
+            color: #222;
+        }
+    }
+}
+
+footer {
+    bottom: 0;
+    z-index: 9;
+    position: absolute;
+    left: 0;
+    right: 0;
+}

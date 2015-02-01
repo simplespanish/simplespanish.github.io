@@ -1,39 +1,86 @@
 <script type="text/javascript" src="./js/slick.min.js"></script>
 <script src="{{ site.baseurl }}/js/wufoo.js"></script>
 <script type="text/javascript">
+  $(function() {
 
+    //SLICK CAROUSEL STUFF
+    //----------------------
+    $("#myCarousel").slick({
+      dots: false,
+      autoplay: true,
+      autoplaySpeed: 5000
+    });
 
-$(function() {
-  $("#myCarousel").slick({
-    dots: true,
-    autoplay: true,
-    autoplaySpeed: 5000
-  });
-
-  var height = $(window).height();
-    height = (height < 460) ? 460 : height;
-  $("#myCarousel").height(height);
-
-  if (height > 600) {
-      $(".col").height((height/2) - 60);
-      $("#about").css('min-height', height/2);
-  }
-
-  // Bind event listener to window resize
-  $(window).resize(function(){
+    //PAGE ITEM SIZING
     var height = $(window).height();
-    height = (height < 460) ? 460 : height;
+      height = (height < 460) ? 460 : height;
     $("#myCarousel").height(height);
-    if (height > 600) {
-      $(".col").height((height/2) - 60);
-      $("#about").css('min-height', height/2);
-    }
-  });
+    if (height > 600)
+        $(".col").height((height/2) - 60);
 
-  $('a.slide-link[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    // Bind event listener to window resize
+    $(window).resize(function(){
+      var height = $(window).height();
+      height = (height < 460) ? 460 : height;
+      $("#myCarousel").height(height);
+      if (height > 600)
+        $(".col").height((height/2) - 60);
+    });
+
+    // Learn More Click
+    $('a#learn-more').click(function() {
+      $("#myCarousel").slickGoTo(1);
+    });
+
+    // Learn More Click
+    $('#learn-more-link').click(function() {
+      $('#myCarousel').slickGoTo(1);
+    });
+
+    // Learn More Benefits Click
+    $('.learn-more-benefits').click(function() {
+      $('#pricing-tabs li:eq(1) a').tab('show');
+      var target = $('#pricing');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 600);
+        return false;
+      }
+    });
+
+    // Slide Page Links
+    $('a.slide-link[href*=#]:not([href=#])').click(function() {
+
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 600);
+          return false;
+        }
+      }
+    });
+
+    if (document.URL.indexOf("#cancelation") != -1) {
+      $("#cancelationModal").modal();
+    }
+
+    if (document.URL.indexOf("#benefits") != -1) {
+      // alert("ASD");
+      // var target = $("pricing");
+      // target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      // if (target.length) {
+      //   $('html,body').animate({
+      //     scrollTop: target.offset().top
+      //   }, 600);
+      //   return false;
+      // }
+      
+      $('#pricing-tabs li:eq(1) a').tab('show');
+      var target = $('#pricing');
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
@@ -41,13 +88,6 @@ $(function() {
         return false;
       }
     }
-  });
 
-  if (document.URL.indexOf("#cancelation") != -1) {
-    $("#cancelationModal").modal();
-  }
-  else if (document.URL.indexOf("#contactcomplete") != -1) {
-    $("#contactModal").modal();
-  } 
-});
+  });
 </script>
