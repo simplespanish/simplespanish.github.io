@@ -6,6 +6,7 @@ cssFiles:
 - blog.css
 ---
 
+<div class="bg-image"></div>
 
 <div class="posts container">
 	<div class="row">
@@ -14,7 +15,7 @@ cssFiles:
 			<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 			<div class="entry">
 				{% if post.image %}
-				<img src="{{ site.baseurl}}/images/{{ post.image }}" class="img-thumbnail pull-left entryImg" alt="Responsive image">
+				<a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ site.baseurl}}/images/{{ post.image }}" class="img-thumbnail pull-left entryImg" alt="Responsive image"></a>
 				<!-- <div class="img-thumbnail entryImg" src="{{ site.baseurl}}/images/{{ post.image }}"></div> -->
 				{% endif %}
 				{{ post.description }}

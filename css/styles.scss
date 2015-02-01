@@ -4,6 +4,24 @@
 @import "_variables";
 @import "_bootstrap";
 
+.bg-image {
+    // background-image: url("../images/thanks.png");
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%), url('../images/thanks.png') ;
+    background-size: cover;
+    background-position: center;
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    &.darker {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 100%), url('../images/thanks.png') ;
+    }
+    
+}
 
 .navbar-wrapper {
   position: absolute;
@@ -12,6 +30,9 @@
   left: 0;
   a.phone-link {
     color: #FEE354 !important;
+  }
+  a.blog-nav-link {
+    text-decoration: underline;
   }
   .navbar-brand {
     font-weight: lighter;
@@ -495,3 +516,7 @@ h3 a {
   background-color: transparent;
 }
 
+footer {
+  margin-left: 15px;
+  margin-right: 15px;
+}
