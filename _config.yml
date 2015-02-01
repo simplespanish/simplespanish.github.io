@@ -6,7 +6,7 @@
 name: Simple Spanish Team
 
 # Short bio or description (displayed in the header)
-description: Simple Spanish is the best place to learn Spanish in DC!
+description: Simple Spanish's passionate tutors offer personalized Spanish classes and private lessons.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -34,6 +34,8 @@ disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-56660356-1
+
+facebook_app_id: 377765452391401
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed

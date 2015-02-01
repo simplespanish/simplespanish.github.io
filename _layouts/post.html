@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: postParent
 cssFiles:
  - post.css
+jsIncludes: 
+ - sharebuttonsjs.html
 ---
 
 <article class="post container">
@@ -9,8 +11,11 @@ cssFiles:
   	<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
 		<h1 class="section-header">{{ page.title }}</h1>
 		{% if page.image %}
-			<img src="{{ site.baseurl}}/images/{{ page.image }}" class="img-thumbnail pull-left entryImg" alt="">
+			<img src="{{ site.baseurl}}/images/{{ page.image }}" class="img-thumbnail entryImg" alt="">
 		{% endif %}
+		<!-- <div class="buttons-container"> -->
+			{% include sharebuttons.html %}
+		<!-- </div> -->
 	    {{ content }}
 		<div class="date">
 		Written on {{ page.date | date: "%B %e, %Y" }}

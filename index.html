@@ -11,7 +11,7 @@ cssFiles:
 <div class="posts container">
 	<div class="row">
 		{% for post in paginator.posts %}
-		<div class="col-xs-12">
+		<div class="col-sm-8 col-sm-offset-2 post">
 			<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 			<div class="entry">
 				{% if post.image %}
@@ -21,6 +21,7 @@ cssFiles:
 				{{ post.description }}
 			</div>
 			<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+			<div class="post-footer"></div>
 		</div>
 		{% endfor %}
 	</div>
