@@ -1,0 +1,37 @@
+#pricing-page,
+#policies-page,
+#thanks-page,
+#jobs,
+#blog,
+#post {
+
+	padding-top: 100px;
+
+	.navbar {
+		background-color: #E0001B;
+	}
+
+	i.group {
+		font-size: .7em !important;
+		position: absolute;
+		top: 10px;
+		left: 10px
+	}
+
+	.well {
+		position: relative;
+		color: #777777;
+		text-shadow: 1px black;
+		margin: 10px 30px;
+		padding-left: 35px;
+		text-align: center;
+	}
+
+	table {
+		p {
+			padding: 0 !important; 
+			font-size: 0.6em !important;
+			font-style: italic;
+		}
+	}
+}

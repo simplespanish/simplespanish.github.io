@@ -4,15 +4,21 @@ cssFiles:
  - post.css
 jsIncludes: 
  - sharebuttonsjs.html
+ - home.html
 ---
+
+<div class="container" id="landing">
+	{% if page.image %}
+	  <div style="background: url('{{ site.baseurl}}/images/{{ page.image }}') no-repeat; background-size: cover;" class="background-image"></div>
+	{% endif %}
+<h1 class="post-title">{{ page.title }}</h1>
+  
+
+</div>
 
 <article class="post container">
   <div class="entry row">
   	<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-		<h1 class="section-header">{{ page.title }}</h1>
-		{% if page.image %}
-			<img src="{{ site.baseurl}}/images/{{ page.image }}" class="img-thumbnail entryImg" alt="">
-		{% endif %}
 		<!-- <div class="buttons-container"> -->
 			{% include sharebuttons.html %}
 		<!-- </div> -->

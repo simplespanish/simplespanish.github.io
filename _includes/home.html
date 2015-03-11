@@ -1,41 +1,63 @@
-<script type="text/javascript" src="./js/slick.min.js"></script>
-<script src="{{ site.baseurl }}/js/wufoo.js"></script>
 <script type="text/javascript">
   $(function() {
 
-    //SLICK CAROUSEL STUFF
-    //----------------------
-    $("#myCarousel").slick({
-      dots: false,
-      autoplay: true,
-      autoplaySpeed: 5000
-    });
+    $("#landing .ss-logo").css({'width' : '80%', 'background-position-y' : '65%'});
+
+    if ($('.navbar').offset().top + 100 > $('#landing').height()) {
+      $('.navbar').css('background', '#e0001b');
+      $('.navbar').css('border-bottom', '3px solid white');
+    }
+    else {
+      $('.navbar').css('background', 'transparent');
+      $('.navbar').css('border-bottom', '3px solid transparent');
+    }
 
     //PAGE ITEM SIZING
     var height = $(window).height();
-      height = (height < 460) ? 460 : height;
-    $("#myCarousel").height(height);
-    if (height > 600)
-        $(".col").height((height/2) - 60);
+    
+    // col height
+    if (height > 370) {
+      $("#about-us .col, #pricing .col").height(355);
+      $("#reviews .col, #teachers .col").css('min-height', 365);
+    }
+
+    // set a min height for landing 
+    height = (height < 460) ? 460 : height;
+    
+    //set landing height
+    $("#landing").height(height/2);
+
 
     // Bind event listener to window resize
     $(window).resize(function(){
+      //PAGE ITEM SIZING
       var height = $(window).height();
+      
+      // col height
+      if (height > 370) {
+        $("#about-us .col, #pricing .col").height(355);
+        $("#reviews .col, #teachers .col").css('min-height', 365);
+      }
+
+      // set a min height for landing 
       height = (height < 460) ? 460 : height;
-      $("#myCarousel").height(height);
-      if (height > 600)
-        $(".col").height((height/2) - 60);
+      
+      //set landing height
+      $("#landing").height(height/2);
+
     });
 
-    // Learn More Click
-    $('a#learn-more').click(function() {
-      $("#myCarousel").slickGoTo(1);
+    $( window ).scroll(function() {
+      if ($('.navbar').offset().top +100 > $('#landing').height()) {
+        $('.navbar').css('background', '#e0001b');
+        $('.navbar').css('border-bottom', '3px solid white');
+      }
+      else {
+        $('.navbar').css('background', 'transparent');
+        $('.navbar').css('border-bottom', '3px solid transparent');
+      }
     });
-
-    // Learn More Click
-    $('#learn-more-link').click(function() {
-      $('#myCarousel').slickGoTo(1);
-    });
+    
 
     // Learn More Benefits Click
     $('.learn-more-benefits').click(function() {
@@ -57,12 +79,15 @@
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
         if (target.length) {
           $('html,body').animate({
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top - 80
           }, 600);
+          $("#navbar").ariaExpanded(false);
           return false;
         }
       }
     });
+
+    
 
     if (document.URL.indexOf("#cancelation") != -1) {
       $("#cancelationModal").modal();

@@ -2,7 +2,7 @@
 layout: post
 title: Simple Spanish News
 description: Simple Spanish has come a long way over the last few months and I owe it all to you. Thank you all for trusting me as your teacher and for all your support!
-image: simplespanishlogowhite.png
+image: marta-standing.jpg
 author: Marta Medina
 ---
 
