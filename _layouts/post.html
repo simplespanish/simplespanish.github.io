@@ -36,11 +36,35 @@ jsIncludes:
 
 </article>
 
-<nav>
-	<ul class="pager">
-		<li class="next {% if page.previous == nil %} disabled {% endif %}"><a {% if page.previous %} href="{{ page.previous.url }}" {% endif %}>Older <span aria-hidden="true">&rarr;</span></a></li>
-		<li class="previous {% if page.next == nil %} disabled {% endif %}"><a {% if page.next %} href="{{ page.next.url }}"{% endif %}><span aria-hidden="true">&larr;</span> Newer</a></li>
-	</ul>
-</nav>
+<div class="footer-links container">
+	{% if page.next != nil %}
+	<div class="next-article row">
+		<a {% if page.next %} href="{{ page.next.url }}" {% endif %}>
+			<div class="col col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+				<div class="banner-image" style="{% if page.next.image %}background-image: url('{{ site.baseurl}}/images/{{ page.next.image }}'){% else %}background: #222{% endif %};"></div>
+				<div class="banner-title">
+					<h5>Next</h5>
+					<h2>{{ page.next.title }}</h2>
+				</div>
+			</div>
+		</a>
+	</div>
+	{% endif %}
+
+	{% if page.previous != nil %}
+	<div class="previous-article row">
+		<a {% if page.previous %} href="{{ page.previous.url }}"{% endif %}>
+			<div class="col col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+				<div class="banner-image" style="{% if page.previous.image %}background-image: url('{{ site.baseurl}}/images/{{ page.previous.image }}'){% else %}background: #222{% endif %};"></div>
+				<div class="banner-title">
+					<h5>Previous</h5>
+					<h2>{{ page.previous.title }}</h2>
+				</div>
+			</div>
+		</a>
+	</div>
+	{% endif %}
+
+</div>
 
 
