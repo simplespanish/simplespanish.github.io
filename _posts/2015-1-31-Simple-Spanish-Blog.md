@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Simple Spanish News
-description: Simple Spanish has come a long way over the last few months and I owe it all to you. Thank you all for trusting me as your teacher and for all your support!
-image: marta-standing.jpg
+title: Another Post
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida turpis risus, in lobortis ante interdum ac. Fusce ut ligula arcu. Donec et blandit nisi. Pellentesque id urna euismod, semper tortor ac, maximus dui. Sed mattis tempus commodo. Aenean orci enim, dictum eu est eu, semper fringilla orci. Mauris ut libero gravida, ornare metus at, congue nulla. Ut eu porttitor felis. Aliquam nec ipsum vehicula, porttitor quam ac, sodales dolor. Nullam fringilla dolor urna, vitae viverra leo vestibulum ut.
+image: study.jpg
 author: Marta Medina
 ---
 
-Simple Spanish has come a long way over the last few months and I owe it all to you. Thank you all for trusting me as your teacher and for all your support!  
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida turpis risus, in lobortis ante interdum ac. Fusce ut ligula arcu. Donec et blandit nisi. Pellentesque id urna euismod, semper tortor ac, maximus dui. Sed mattis tempus commodo. Aenean orci enim, dictum eu est eu, semper fringilla orci. Mauris ut libero gravida, ornare metus at, congue nulla. Ut eu porttitor felis. Aliquam nec ipsum vehicula, porttitor quam ac, sodales dolor. Nullam fringilla dolor urna, vitae viverra leo vestibulum ut.
 
-As we grow, we’re developing a list of benefits and policy structure. Some of the benefits are: referral bonuses, preferred scheduling and Sunday classes. Check them out here on the website so you don't miss any! 
+Duis lobortis leo ex, eget sodales lectus ultrices quis. Phasellus eu pulvinar ex. Etiam ut semper nunc, a rutrum elit. Etiam eget ex vel lorem imperdiet ultricies sed nec felis. Praesent nec porta odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean pulvinar eget enim quis mattis. Aliquam pretium eleifend urna eu vulputate. Suspendisse dapibus diam vel sem fermentum finibus. Sed iaculis lectus erat, ullamcorper aliquam ipsum tempus ac. Vivamus suscipit quis sem in tincidunt. Quisque auctor augue a arcu consectetur placerat. Nam lorem augue, dignissim vel velit sit amet, volutpat dictum nisi. Vestibulum fermentum congue lectus, quis auctor magna porttitor ut. Donec ex neque, pharetra congue accumsan porta, eleifend sit amet est. Mauris commodo sem magna, ac consectetur nulla elementum vitae.
 
-You can also look at the updated policies on the website. The most important one that I want to share with you is the cancellation and rescheduling policy - to ensure that there’s always availability for each and every one of you, I really appreciate 24 hour notice for a rescheduling.  
+Pellentesque aliquet vehicula aliquam. Maecenas quis turpis venenatis, laoreet erat eu, mollis lorem. Integer eu gravida felis. Pellentesque augue lectus, efficitur ut nisi sed, condimentum feugiat purus. Praesent dignissim imperdiet leo a molestie. Integer tempus cursus facilisis. Etiam in metus tristique, auctor augue id, aliquam est. Mauris interdum pretium nunc eget rutrum. Nullam ac tempus augue. Aenean interdum augue felis, eget lacinia tellus tincidunt rhoncus. Suspendisse mattis quam ipsum, porta molestie dolor ultricies vel. Vestibulum in posuere erat. Pellentesque et urna nec massa consequat sollicitudin ac vitae diam.
 
-It's being an amazing journey so far and I’m learning as I go. I will always try to be flexible with all my students and I appreciate everyone working with me too!
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce iaculis tortor a imperdiet dignissim. Duis sed lectus vehicula, malesuada nisl a, consequat ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget mollis odio. Proin volutpat nunc vel egestas pretium. Donec auctor ipsum non mauris malesuada interdum. Nam varius, tortor vitae eleifend interdum, augue purus accumsan libero, in bibendum neque dolor a quam. Nunc finibus imperdiet justo, eget varius risus consectetur sit amet.
 
-Saludos, 
-Marta
-
+Quisque ultricies nibh vel massa porta, a consequat nulla molestie. Donec nunc ipsum, ultricies et sapien vitae, facilisis posuere justo. Curabitur in eleifend turpis. Morbi dui libero, porttitor vel felis id, aliquam dapibus turpis. Vivamus eu enim vestibulum, bibendum diam vel, rhoncus justo. Fusce faucibus ex lorem, vitae cursus elit dignissim eu. Curabitur non tempus orci, eget feugiat nisl. Vestibulum eleifend, mauris ac congue mollis, nisi augue scelerisque nunc, sed interdum lorem nisl non nulla. Sed rutrum tempor leo, iaculis hendrerit felis finibus eu. Cras et eleifend justo. Suspendisse non elit condimentum, sodales ipsum sit amet, eleifend justo. Praesent in ex nibh. Maecenas vulputate vestibulum orci quis rutrum. Donec urna felis, varius at lectus a, ultricies euismod enim. Proin sed ligula magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;

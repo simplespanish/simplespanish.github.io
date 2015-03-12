@@ -1,17 +1,17 @@
 ---
 layout: postParent
 cssFiles:
- - post.css
+ - post.css?cb=1
 jsIncludes: 
  - sharebuttonsjs.html
- - home.html
 ---
 
 <div class="container" id="landing">
-	{% if page.image %}
-	  <div style="background: url('{{ site.baseurl}}/images/{{ page.image }}') no-repeat; background-size: cover;" class="background-image"></div>
-	{% endif %}
-<h1 class="post-title">{{ page.title }}</h1>
+	<div style="background: {% if page.image %}url('{{ site.baseurl}}/images/{{ page.image }}') no-repeat{% else %}#222;{% endif %}; background-size: cover;" class="background-image"></div>
+	<div class="post-title">
+		<h5>{{ page.date | date: "%b %-d, %Y" }}</h5>
+		<h1>{{ page.title }}</h1>
+	</div>
   
 
 </div>
@@ -19,13 +19,13 @@ jsIncludes:
 <article class="post container">
   <div class="entry row">
   	<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-		<!-- <div class="buttons-container"> -->
-			{% include sharebuttons.html %}
-		<!-- </div> -->
+		{% include sharebuttons.html %}
 	    {{ content }}
-		<div class="date">
-		Written on {{ page.date | date: "%B %e, %Y" }}
+	    {% if page.date %}
+		<div class="meta">
+			Written on {{ page.date | date: "%B %e, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}
 		</div>
+		{% endif %}
     </div>
   </div>
 
