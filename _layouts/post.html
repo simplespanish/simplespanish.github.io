@@ -40,10 +40,10 @@ jsIncludes:
 	{% if page.next != nil %}
 	<div class="next-article row">
 		<a {% if page.next %} href="{{ page.next.url }}" {% endif %}>
-			<div class="col col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 footer-col">
 				<div class="banner-image" style="{% if page.next.image %}background-image: url('{{ site.baseurl}}/images/{{ page.next.image }}'){% else %}background: #222{% endif %};"></div>
 				<div class="banner-title">
-					<h5>Next</h5>
+					<h5>Next&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></h5>
 					<h2>{{ page.next.title }}</h2>
 				</div>
 			</div>
@@ -54,10 +54,10 @@ jsIncludes:
 	{% if page.previous != nil %}
 	<div class="previous-article row">
 		<a {% if page.previous %} href="{{ page.previous.url }}"{% endif %}>
-			<div class="col col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 footer-col">
 				<div class="banner-image" style="{% if page.previous.image %}background-image: url('{{ site.baseurl}}/images/{{ page.previous.image }}'){% else %}background: #222{% endif %};"></div>
 				<div class="banner-title">
-					<h5>Previous</h5>
+					<h5><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Previous</h5>
 					<h2>{{ page.previous.title }}</h2>
 				</div>
 			</div>
