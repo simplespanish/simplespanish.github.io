@@ -1,4 +1,4 @@
-.container#landing {
+#post .container#landing {
 	
 	padding: 10% 20px !important;
 	max-height: 440px !important;
@@ -10,6 +10,8 @@
 
 	.background-image {
 		z-index: -1;
+		-webkit-filter: blur(4px) brightness(73%);
+			filter: blur(4px) brightness(73%);
 	}
 
 	#landing-translations-button {
@@ -54,9 +56,9 @@
 	padding-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
-	img:not(.emoji) {
-		max-width: 100%;
-	}
+	// img:not(.emoji) {
+	// 	max-width: 100%;
+	// }
 
 	.entry {
 
@@ -170,8 +172,8 @@ nav {
 
 		.banner-image {
 			z-index: -1;
-			-webkit-filter: blur(14px) brightness(73%);
-			filter: blur(14px) brightness(73%);
+			-webkit-filter: blur(4px) brightness(73%);
+			filter: blur(4px) brightness(73%);
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
