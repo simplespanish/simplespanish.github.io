@@ -1,19 +1,30 @@
-#landing {
+.container#landing {
 	
-	padding: 20% 20px !important;
-	min-height: none !important;
+	padding: 10% 20px !important;
+	max-height: 440px !important;
+	min-height: 230px !important;
 
 	@media (max-width: 450px) {
-		padding: 45% 20px !important;
+		padding: 40% 20px !important;
 	}
 
 	.background-image {
 		z-index: -1;
 	}
+
+	#landing-translations-button {
+		position: absolute;
+		bottom: 5px; 
+		right: 5px;
+		height: 30px;
+		font-size: 0.7em;
+		color: white;
+	}
+
 }
 
 .rrssb-buttons {
-	margin: 7% 0;
+	margin: 4% 0;
 }
 
 .post-title {
@@ -49,9 +60,20 @@
 
 	.entry {
 
-		i {
-			text-align: right;
+		.translation-section {
+			text-align: right !important;
 			color: #777;
+			font-style: italic;
+			font-weight: 100;
+			position: relative;
+
+			// .translations-button {
+			// 	position: absolute;
+			// 	top: 5px; 
+			// 	left: 5px;
+			// 	font-size: 1.0em;
+			// 	color: #777;
+			// }
 		}
 
 	}

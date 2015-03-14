@@ -4,6 +4,8 @@ cssFiles:
  - post.css?cb=1
 jsIncludes: 
  - sharebuttonsjs.html
+ - translationsjs.html
+ - postjs.html
 ---
 
 <div class="container" id="landing">
@@ -12,6 +14,7 @@ jsIncludes:
 		<h5>{{ page.date | date: "%b %-d, %Y" }}</h5>
 		<h1>{{ page.title }}</h1>
 		<h4>{{ page.title-english }}</h4>
+		<button id="landing-translations-button" class="btn btn-sm btn-primary" data-toggle="collapse" data-target=".translation-section" aria-expanded="true" aria-controls="translation-section"><i class="fa fa-minus-square"></i>&nbsp;&nbsp;Hide Translations</button>
 	</div>
   
 
