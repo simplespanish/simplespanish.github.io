@@ -1,11 +1,32 @@
 #post .container#landing {
 	
-	padding: 10% 20px !important;
+	padding: 14% 20px !important;
 	max-height: 440px !important;
-	min-height: 230px !important;
+	min-height: 330px !important;
 
-	@media (max-width: 450px) {
-		padding: 40% 20px !important;
+	@media (max-width: 768px) {
+		padding: 30% 20px !important;
+	}
+
+	@media (max-width: 400px) {
+		.ss-logo {
+			display: none;
+		}
+	}
+
+	.ss-logo {
+		background-image: url("../images/simplespanishOutline.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		// background-position: 50% 67%;
+		position: absolute;
+		top: 20px;
+		left: 0;
+		right: 0;
+		height: 50px;
+		margin: auto;
+
+			// -webkit-transition: width 1s ease-out, background-position-y 1s ease-out;
 	}
 
 	.background-image {
@@ -93,23 +114,7 @@
 	
 }
 
-nav {
 
-	ul.pagination,
-	ul.pager {
-		padding: 0 20px;
-		li {
-			a {
-				color: $darkerGray;
-			}
-			&.active {
-				a {
-					background-color: $darkerGray;
-				}
-			}
-		}
-	}
-}
 
 .footer-links {
 	margin-top: 30px;

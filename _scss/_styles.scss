@@ -29,6 +29,18 @@ p {
 	padding-top: 15px;
 	padding-bottom: 15px;
 
+	&.filled {
+		background: #e0001b;
+		border-bottom: 3px solid white;
+		background-image: url("../images/simplespanishOutlineWhite.svg");
+		background-size: 60% 60%;
+		background-repeat: no-repeat;
+		background-position: center;
+		@media (max-width: 400px) {
+			background-image: none;
+		}
+	}
+
 	.navbar-header {
 		padding-left: 15px;
 		padding-right: 15px;

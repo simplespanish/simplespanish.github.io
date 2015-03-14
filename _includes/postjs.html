@@ -3,12 +3,10 @@
 		$( window ).scroll(function() {
 			var padding = 2*(parseInt($("#landing").css("padding-top").replace("px", "")));
 			if ($('.navbar').offset().top + 100 > padding + $('#landing').height()) {
-				$('.navbar').css('background', '#e0001b');
-				$('.navbar').css('border-bottom', '3px solid white');
+				$('.navbar').addClass('filled');
 			}
 			else {
-				$('.navbar').css('background', 'transparent');
-				$('.navbar').css('border-bottom', '3px solid transparent');
+				$('.navbar').removeClass('filled');
 			}
 		});
 
