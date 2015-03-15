@@ -1,0 +1,15 @@
+<script type="text/javascript">
+	$(function() {
+
+		if (document.URL.indexOf("#beginner") != -1) {
+          $('#tabs li:eq(0) a').tab('show');
+        }
+        else if (document.URL.indexOf("#intermediate") != -1) {
+          $('#tabs li:eq(1) a').tab('show');
+        }
+        else if (document.URL.indexOf("#advanced") != -1) {
+          $('#tabs li:eq(2) a').tab('show');
+        }
+
+	});
+</script>
