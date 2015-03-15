@@ -1,0 +1,169 @@
+---
+layout: post
+title: Repaso de Gramática
+title-english: Grammar Review
+description: Description here Description here Description here Description here Description here Description here 
+image: grammar.jpg
+author: Marta Medina
+hasTranslations: false
+---
+
+<ul class="nav nav-tabs nav-justified">
+<li role="presentation" class="active"><a href="#beginner" aria-controls="beginner" role="tab" data-toggle="tab">Beginner</a></li>
+	<li role="presentation"><a href="#intermediate" aria-controls="intermediate" role="tab" data-toggle="tab">Intermediate</a></li>
+	<li role="presentation"><a href="#advanced" aria-controls="advanced" role="tab" data-toggle="tab">Advanced</a></li>
+</ul>
+
+<br>
+
+<!-- Tab panes -->
+<div class="tab-content">
+
+	<!-- Beginner -->
+	<div role="tabpanel" class="tab-pane active" id="beginner">
+
+		<!-- Grammar -->
+		<div class="panel panel-default">
+			<div class="panel-heading">GRAMÁTICA</div>
+			<div class="panel-body">
+				<strong>Usos de SER</strong> (to be):
+				<ul>
+					<li>Nombres: Soy Marta. Soy Juan. Soy Raquel.</li>
+					<li>Nacionalidad: Soy de España. Soy española. Son de Colombia. Son colombianos. Ella es de Alemania. Ella es alemana.</li>
+					<li>Profesión: Soy profesora. Él es bombero. Ella es peluquera. Nosotros somos médicos.</li>
+					<li>Característica (esencial) física: Ella es baja y morena. Soy rubio y alto.</li>
+					<li>Característica (esencial) de personalidad: Soy amable y simpática. Ella es lista y cariñosa.</li>
+				</ul>
+				<strong>Usos de ESTAR</strong> (to be):
+				<ul>
+					<li>Locación: Washington, D.C. está en los Estados Unidos.</li>
+					<li>Estado (de las cosas): La botella está vacía.</li>
+					<li>Estado (de las personas): Estoy muy nerviosa por mi examen.</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Verbs -->
+		<div class="panel panel-default">
+			<div class="panel-heading">VERBO</div>
+			<div class="panel-body">
+				<strong>HAY</strong> (there is or there are):
+				<ul>
+					<li>¿Cuántas sillas hay en la clase? En la clase hay tres sillas</li>
+					<li>¿Cuántas habitaciones hay en tu casa? En mi casa hay 2 habitaciones.</li>
+					<li>¿Qué hay en la botella? En la botella hay agua.</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Expression -->
+		<div class="panel panel-default">
+			<div class="panel-heading">EXPRESIÓN</div>
+			<div class="panel-body">
+				<strong>"Ser un sol"</strong> (literalmente: to be a sun).
+				<ul><li>Significa "to be a very nice person".</i></li></ul>
+				<p>I'd had a terrible day and, when I left work, my flatmate was there waiting for me - She came to pick me up! I said: "Muchísimas gracias ¡<strong>eres un sol</strong>!"</p>
+			</div>
+		</div>
+
+	</div> <!-- ./Beginner -->
+
+	<!-- Intermediate -->
+	<div role="tabpanel" class="tab-pane" id="intermediate">
+
+		<!-- Grammar -->
+		<div class="panel panel-default">
+			<div class="panel-heading">GRAMÁTICA</div>
+			<div class="panel-body">
+				<strong>Comparativo de cantidad:</strong>
+				<strong>Más + que / menos + que:</strong>
+				<ul>
+					<li>Tengo más libros que tú.</li>
+					<li>Él es más alto que ella.</li>
+					<li>Nosotros comemos menos que ellos.</li>
+					<li>Ellos cantan menos canciones que nosotros.</li>
+				</ul>
+				<strong>Más + de / menos + de:</strong>
+				<ul>
+					<li>Tengo más de quince amigos.</li>
+					<li>Esto no vale más de cincuenta dólares.</li>
+					<li>Aquí hay menos de cien personas.</li>
+					<li>Mi madre tiene menos de cinco hermanos. Tiene tres. </li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Verbs -->
+		<div class="panel panel-default">
+			<div class="panel-heading">VERBO</div>
+			<div class="panel-body">
+				<strong>HAY</strong> (there is or there are):
+				<ul>
+					<li>¿Cuántas sillas hay en la clase? En la clase hay tres sillas</li>
+					<li>¿Cuántas habitaciones hay en tu casa? En mi casa hay 2 habitaciones.</li>
+					<li>¿Qué hay en la botella? En la botella hay agua.</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Expression -->
+		<div class="panel panel-default">
+			<div class="panel-heading">EXPRESIÓN</div>
+			<div class="panel-body">
+				<strong>"Ser un sol"</strong> (literalmente: to be a sun).
+				<ul><li>Significa "to be a very nice person".</i></li></ul>
+				<p>I'd had a terrible day and, when I left work, my flatmate was there waiting for me - She came to pick me up! I said: "Muchísimas gracias ¡<strong>eres un sol</strong>!"</p>
+			</div>
+		</div>
+
+	</div><!-- ./Intermediate -->
+
+	<!-- Advanced -->
+	<div role="tabpanel" class="tab-pane" id="advanced">
+
+		<!-- Grammar -->
+		<div class="panel panel-default">
+			<div class="panel-heading">GRAMÁTICA</div>
+			<div class="panel-body">
+				<strong>ADVANCED!!!!</strong> (to be):
+				<ul>
+					<li>Nombres: Soy Marta. Soy Juan. Soy Raquel.</li>
+					<li>Nacionalidad: Soy de España. Soy española. Son de Colombia. Son colombianos. Ella es de Alemania. Ella es alemana.</li>
+					<li>Profesión: Soy profesora. Él es bombero. Ella es peluquera. Nosotros somos médicos.</li>
+					<li>Característica (esencial) física: Ella es baja y morena. Soy rubio y alto.</li>
+					<li>Característica (esencial) de personalidad: Soy amable y simpática. Ella es lista y cariñosa.</li>
+				</ul>
+				<strong>Usos de ESTAR</strong> (to be):
+				<ul>
+					<li>Locación: Washington, D.C. está en los Estados Unidos.</li>
+					<li>Estado (de las cosas): La botella está vacía.</li>
+					<li>Estado (de las personas): Estoy muy nerviosa por mi examen.</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Verbs -->
+		<div class="panel panel-default">
+			<div class="panel-heading">VERBO</div>
+			<div class="panel-body">
+				<strong>HAY</strong> (there is or there are):
+				<ul>
+					<li>¿Cuántas sillas hay en la clase? En la clase hay tres sillas</li>
+					<li>¿Cuántas habitaciones hay en tu casa? En mi casa hay 2 habitaciones.</li>
+					<li>¿Qué hay en la botella? En la botella hay agua.</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Expression -->
+		<div class="panel panel-default">
+			<div class="panel-heading">EXPRESIÓN</div>
+			<div class="panel-body">
+				<strong>"Ser un sol"</strong> (literalmente: to be a sun).
+				<ul><li>Significa "to be a very nice person".</i></li></ul>
+				<p>I'd had a terrible day and, when I left work, my flatmate was there waiting for me - She came to pick me up! I said: "Muchísimas gracias ¡<strong>eres un sol</strong>!"</p>
+			</div>
+		</div>
+
+	</div><!-- ./Advanved -->
+</div><!-- ./Tab Content -->
