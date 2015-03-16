@@ -24,7 +24,7 @@ jsIncludes:
 					</div>
 				</div>
 			</a>
-			{% include sharebuttons.html %}
+			{% include sharebuttons.html title=post.title url=post.url image=post.image description=post.description %}
 			{% if post.description %}
 			<p>{{ post.description }}</p>
 			<p style="text-align: right; color: #555;"><i>{{ post.description-english }}</i></p>
