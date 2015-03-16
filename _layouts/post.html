@@ -25,21 +25,18 @@ jsIncludes:
 </div>
 
 <article class="post container">
-  <div class="entry row">
-  	<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-		{% include sharebuttons.html %}
-	    {{ content }}
-	    {% if page.date %}
-		<div class="meta">
-			Written on {{ page.date | date: "%B %e, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}
-		</div>
-		{% endif %}
-    </div>
-  </div>
-
-
-
-  {% include disqus.html disqus_identifier=page.disqus_identifier %}
+	<div class="entry row">
+	  	<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+			{% include sharebuttons.html %}
+		    {{ content }}
+		    {% if page.date %}
+			<div class="meta">
+				Written on {{ page.date | date: "%B %e, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}
+			</div>
+			{% endif %}
+	    </div>
+	</div>
+ 
 
 
 </article>
@@ -74,5 +71,3 @@ jsIncludes:
 	{% endif %}
 
 </div>
-
-

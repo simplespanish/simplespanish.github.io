@@ -25,10 +25,13 @@ jsIncludes:
 				</div>
 			</a>
 			{% include sharebuttons.html %}
+			{% if post.description %}
 			<p>{{ post.description }}</p>
 			<p style="text-align: right; color: #555;"><i>{{ post.description-english }}</i></p>
 			<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
 			<div class="post-footer"></div>
+			{% endif %}
+			<hr>
 		</div>
 		{% endfor %}
 	</div>
