@@ -13,19 +13,44 @@
     <meta name="author" content="{{ site.name }}" />
     <meta name="description" content="{{ site.description }}">
 
-    <!-- Facebook Meta -->
-    <meta property="og:site_name" content="{{ site.name }}"/>
-    <meta property="og:title" content="{{ page.title }}" />
-    <!-- <meta property="og:url" content="http://blog.simplespanish.com{{ page.url }}index.html" /> -->
-    <meta property="og:description" content="{{ page.description }}" />
-    <meta property="fb:app_id" content="{{ site.facebook_app_id }}" />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{{ page.title }}">
+    <meta itemprop="description" content="{{ page.description }}">
+    {% if page.image %}
+        <meta itemprop="image" content="http://blog.simplespanish.com/images/{{ page.image }}">
+    {% endif %}
+
+    <!-- Twitter Card data -->
+    {% if page.image %}
+        <meta name="twitter:card" content="http://blog.simplespanish.com/images/{{ page.image }}">
+    {% endif %}
+    <meta name="twitter:site" content="@{{ site.footer-links.twitter }}">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="twitter:creator" content="@{{ site.footer-links.twitter }}">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    {% if page.image %}
+        <meta name="twitter:image:src" content="http://blog.simplespanish.com/images/{{ page.image }}">
+    {% endif %}
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="{{ page.title }}"/>
     <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://blog.simplespanish.com{{ page.url }}index.html" />
     {% if page.image %}
       <meta property="og:image" content="http://blog.simplespanish.com/images/{{ page.image }}" />
     {% endif %}
-    <meta property="og:artice:published_time" content="{{ page.date }}" />
-    <meta property="article:author" content="https://www.facebook.com/{{ site.footer-links.facebook }}" />
-    <meta property="article:publisher" content="https://www.facebook.com/{{ site.footer-links.facebook }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:site_name" content="{{ site.name }}"/>
+    <meta property="article:published_time" content="{{ page.date }}" />
+    <meta property="article:modified_time" content="{{ page.date }}" />
+<!--     <meta property="article:section" content="Article Section" /> -->
+<!-- <meta property="article:tag" content="Article Tag" /> -->
+    <meta property="fb:admins" content="{{ site.facebook_app_id }}" />
+    <meta property="fb:app_id" content="{{ site.facebook_app_id }}" />
+    
+    
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
