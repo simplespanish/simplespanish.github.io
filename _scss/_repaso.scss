@@ -1,0 +1,50 @@
+.panel-heading {
+	text-align: center;
+	font-weight: 700;
+}
+.panel.translations-hidden {
+
+	.translation {
+		display: none;
+	}	
+
+}
+
+.red {
+	color: $primary-red;
+}
+
+.translation {
+	display: block;
+	font-style: italic;
+	color: #C3C3C3;
+}
+
+.translation-button {
+	padding: 0;
+	color: $primary-red;
+	position: absolute;
+	right: 30px;
+	&:active {
+		box-shadow: none;
+	}
+	
+	&:hover {
+		color: #555;
+	}
+
+	i {
+		display: none;
+	}
+}
+
+@media (max-width: 450px) {
+	.translation-button {
+		i {
+			display: inline;
+		}
+		span {
+			display: none;
+		}
+	}
+}

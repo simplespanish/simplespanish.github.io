@@ -61,6 +61,9 @@
     {% for cssFile in page.cssFiles %}
       <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/{{ cssFile }}" />
     {% endfor %}
+    {% if page.cssFile %}
+      <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/{{ page.cssFile }}" />
+    {% endif %}
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
@@ -88,5 +91,8 @@
       {% include {{ jsInclude }} %}
       
     {% endfor %}
+    {% if page.jsInclude %}
+      {% include {{ page.jsInclude }} %}
+    {% endif %}
   </body>
 </html>

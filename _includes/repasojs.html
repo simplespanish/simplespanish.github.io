@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	$(function() {
+		$(".translation-button").click(function(){
+			if ($($(this).attr("panel")).hasClass('translations-hidden')) {
+				$($(this).attr("panel")).removeClass('translations-hidden');
+				$(this).find("i").removeClass('fa-eye');
+				$(this).find("i").addClass('fa-eye-slash');
+				$(this).find("span").html('Hide Translation');
+			}
+			else {
+				$(this).find("span").html('Show Translation');
+				$($(this).attr("panel")).addClass('translations-hidden');
+				$(this).find("i").removeClass('fa-eye-slash');
+				$(this).find("i").addClass('fa-eye');
+			}
+		}); 
+
+	});
+</script>
