@@ -22,7 +22,7 @@
 			transition: background-color .15s ease-out;
 
 			&:hover {
-				background-color: $primary-red;
+				background-color: rgba(0, 0, 0, 0.28);;
 			}
 			&:active {
 				background-color: lighten($primary-red, 10%);

@@ -10,14 +10,20 @@
 
 }
 
+.panel-body {
+	ul {
+		margin-top: 10px;
+	}
+}
+
 .red {
 	color: $primary-red;
 }
 
 .translation {
 	display: block;
-	font-style: italic;
-	color: #C3C3C3;
+	// font-style: italic;
+	color: #149CC9;
 }
 
 .translation-button {
