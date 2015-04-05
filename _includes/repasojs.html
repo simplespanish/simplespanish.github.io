@@ -5,10 +5,10 @@
 				$($(this).attr("panel")).removeClass('translations-hidden');
 				$(this).find("i").removeClass('fa-eye');
 				$(this).find("i").addClass('fa-eye-slash');
-				$(this).find("span").html('Hide Translations');
+				$(this).find("span").html($(this).find("span").html().replace("Show", "Hide"));
 			}
 			else {
-				$(this).find("span").html('Show Translations');
+				$(this).find("span").html($(this).find("span").html().replace("Hide", "Show"));
 				$($(this).attr("panel")).addClass('translations-hidden');
 				$(this).find("i").removeClass('fa-eye-slash');
 				$(this).find("i").addClass('fa-eye');
