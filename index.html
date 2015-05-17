@@ -47,9 +47,9 @@ jsIncludes:
 			{% endif %}
 			{% for i in (1..paginator.total_pages) %}
 				{% if i == 1 %}
-				<li {% if i == paginator.page %} class="active" {% endif %}><a href="{{ site.baseurl }}/blog/index.html">{{ i }}</a></li>
+				<li {% if i == paginator.page %} class="active" {% endif %}><a href="{{ site.baseurl }}/index.html">{{ i }}</a></li>
 				{% else %}
-				<li {% if i == paginator.page %} class="active" {% endif %}><a href="{{ site.baseurl }}/blog/page{{ i }}/">{{ i }}</a></li>
+				<li {% if i == paginator.page %} class="active" {% endif %}><a href="{{ site.baseurl }}/page{{ i }}/">{{ i }}</a></li>
 				{% endif %}
 			{% endfor %}
 			{% if paginator.next_page %}

@@ -2,7 +2,7 @@
 	$(function() {
 		$( window ).scroll(function() {
 			var padding = 2*(parseInt($("#landing").css("padding-top").replace("px", "")));
-			if ($('.navbar').offset().top + 100 > padding + $('#landing').height()) {
+			if ($('.navbar').offset().top + 300 > padding + $('#landing').height()) {
 				$('.navbar').addClass('filled');
 			}
 			else {
